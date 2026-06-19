@@ -36,12 +36,12 @@ const menuPreviewItems = [
 ];
 
 const galleryItems = [
-  { id: 0, src: "/images/gallery-1-margherita-bufala.jpg", alt: "Pizza Margherita con Bufala" },
-  { id: 1, src: "/images/gallery-2-farinata-classica.jpg", alt: "Farinata Classica" },
-  { id: 2, src: "/images/gallery-3-prosciutto-crudo.jpg", alt: "Pizza con Prosciutto Crudo" },
-  { id: 3, src: "/images/gallery-4-pesto-pomodorini.jpg", alt: "Pizza Pesto e Pomodorini" },
-  { id: 4, src: "/images/gallery-5-farinata-zucchine.jpg", alt: "Farinata con Zucchine" },
-  { id: 5, src: "/images/gallery-6-friarielli.jpg", alt: "Pizza Salsiccia e Friarielli" },
+  { id: 0, src: "/images/pizza-margherita-bufala.jpg", alt: "Pizza Margherita con Bufala" },
+  { id: 1, src: "/images/farinata-classica.jpg", alt: "Farinata Classica" },
+  { id: 2, src: "/images/pizza-prosciutto-crudo.jpg", alt: "Pizza con Prosciutto Crudo" },
+  { id: 3, src: "/images/pizza-pesto-pomodorini.jpg", alt: "Pizza Pesto e Pomodorini" },
+  { id: 4, src: "/images/farinata-zucchini.jpg", alt: "Farinata con Zucchine" },
+  { id: 5, src: "/images/pizza-friarielli.jpg", alt: "Pizza Salsiccia e Friarielli" },
 ];
 
 export default function HomePageClient() {
