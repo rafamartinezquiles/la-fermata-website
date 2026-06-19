@@ -8,11 +8,11 @@ export const menuSectionsEN: MenuSection[] = [
       {
         title: "Drinks",
         items: [
-          { name: "Acqua naturale o gasata", price: "€2,00" },
+          { name: "Still or sparkling water", price: "€2,00" },
           {
-            name: "Bibite",
+            name: "Soft drinks",
             description:
-              "Coca-Cola, Coca Cola Zero, Estathè peach or lemon, Fanta, Sprite, Chinotto, Lemonsoda",
+              "Coca-Cola, Coca Cola Zero, Iced tea peach or lemon, Fanta, Sprite, Chinotto, Lemonsoda",
             price: "€3,50",
           },
           { name: "Spritz (Aperol, Campari, Hugo)", price: "€6,00" },
@@ -22,22 +22,22 @@ export const menuSectionsEN: MenuSection[] = [
         title: "Draught Beverages",
         items: [
           {
-            name: "Birra alla spina bionda",
+            name: "Blonde draught beer",
             pricePiccola: "€4,00",
             priceMedia: "€5,50",
           },
           {
-            name: "Birra alla spina rossa",
+            name: "Red draught beer",
             pricePiccola: "€4,50",
             priceMedia: "€6,50",
           },
           {
-            name: "Panaché bionda",
+            name: "Shandy blonde",
             pricePiccola: "€3,50",
             priceMedia: "€5,50",
           },
           {
-            name: "Panaché rossa",
+            name: "Shandy red",
             pricePiccola: "€4,00",
             priceMedia: "€6,50",
           },
@@ -52,10 +52,10 @@ export const menuSectionsEN: MenuSection[] = [
         title: "Bottled Beers",
         items: [
           { name: "Weiss 50cl", price: "€7,00" },
-          { name: "Menabrea Ambrata 33cl", price: "€5,00" },
-          { name: "Menabrea Bionda 33cl", price: "€5,00" },
-          { name: "Ichnusa non filtrata 33cl", price: "€6,00" },
-          { name: "Birre 33cl", price: "€5,00" },
+          { name: "Menabrea Amber 33cl", price: "€5,00" },
+          { name: "Menabrea Blonde 33cl", price: "€5,00" },
+          { name: "Ichnusa unfiltered 33cl", price: "€6,00" },
+          { name: "Beers 33cl", price: "€5,00" },
         ],
       },
       {
@@ -71,21 +71,21 @@ export const menuSectionsEN: MenuSection[] = [
       {
         title: "Red Wine",
         items: [
-          { name: "Vino in bottiglia 0,75", price: "€15,00" },
-          { name: "Vino in bottiglia 0,75", price: "€20,00" },
-          { name: "sfuso 1/4 lt", price: "€5,00" },
-          { name: "sfuso 1/2 lt", price: "€7,00" },
-          { name: "Calice", price: "€5,00" },
+          { name: "Wine bottle 0.75l", price: "€15,00" },
+          { name: "Wine bottle 0.75l", price: "€20,00" },
+          { name: "House wine 1/4 lt", price: "€5,00" },
+          { name: "House wine 1/2 lt", price: "€7,00" },
+          { name: "Glass", price: "€5,00" },
         ],
       },
       {
         title: "White Wine",
         items: [
-          { name: "Vino in bottiglia 0,75", price: "€14,00" },
-          { name: "Vino in bottiglia 0,75", price: "€16,00" },
-          { name: "sfuso 1/4 lt", price: "€5,00" },
-          { name: "sfuso 1/2 lt", price: "€7,00" },
-          { name: "Calice", price: "€5,00" },
+          { name: "Wine bottle 0.75l", price: "€14,00" },
+          { name: "Wine bottle 0.75l", price: "€16,00" },
+          { name: "House wine 1/4 lt", price: "€5,00" },
+          { name: "House wine 1/2 lt", price: "€7,00" },
+          { name: "Glass", price: "€5,00" },
         ],
       },
     ],
