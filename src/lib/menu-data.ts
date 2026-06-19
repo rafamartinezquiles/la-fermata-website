@@ -29,64 +29,84 @@ export const menuSections: MenuSection[] = [
       {
         title: "Bevande",
         items: [
-          { name: "Acqua naturale/frizzante", price: "€2,00" },
-          { name: "Coca Cola/Fanta/Sprite", price: "€3,00" },
-          { name: "Coca Cola Zero", price: "€3,00" },
-          { name: "Chinotto", price: "€3,00" },
-          { name: "Thè pesca/limone", price: "€3,00" },
-          { name: "Succo di frutta", price: "€2,50" },
-          { name: "Aranciata/Limonata San Pellegrino", price: "€3,50" },
+          { name: "Acqua naturale o gasata", price: "€2,00" },
+          {
+            name: "Bibite",
+            description:
+              "Coca-Cola, Coca Cola Zero, Estathè pesca o limone, Fanta, Sprite, Chinotto, Lemonsoda",
+            price: "€3,50",
+          },
+          { name: "Spritz (Aperol, Campari, Hugo)", price: "€6,00" },
         ],
       },
       {
-        title: "Bevande alla Spina",
+        title: "Bevande alla spina",
         items: [
-          { name: "Coca Cola", pricePiccola: "€2,50", priceMedia: "€4,00" },
-          { name: "Fanta", pricePiccola: "€2,50", priceMedia: "€4,00" },
-          { name: "Birra Bionda", pricePiccola: "€2,50", priceMedia: "€5,00" },
-          { name: "Birra Rossa", pricePiccola: "€3,00", priceMedia: "€5,50" },
+          {
+            name: "Birra alla spina bionda",
+            pricePiccola: "€4,00",
+            priceMedia: "€5,50",
+          },
+          {
+            name: "Birra alla spina rossa",
+            pricePiccola: "€4,50",
+            priceMedia: "€6,50",
+          },
+          {
+            name: "Panaché bionda",
+            pricePiccola: "€5,50",
+            priceMedia: "€3,50",
+          },
+          {
+            name: "Panaché rossa",
+            pricePiccola: "€4,00",
+            priceMedia: "€6,50",
+          },
+          {
+            name: "Coca Cola",
+            pricePiccola: "€3,50",
+            priceMedia: "€4,50",
+          },
         ],
       },
       {
-        title: "Birre in Bottiglia",
+        title: "Birre in bottiglia",
         items: [
-          { name: "Moretti 66cl", price: "€5,00" },
-          { name: "Ichnusa 50cl", price: "€4,50" },
-          { name: "Corona 33cl", price: "€4,00" },
-          { name: "Peroni Chill Lemon 33cl", price: "€4,00" },
+          { name: "Weiss 50cl", price: "€7,00" },
+          { name: "Menabrea Ambrata 33cl", price: "€5,00" },
+          { name: "Menabrea Bionda 33cl", price: "€5,00" },
+          { name: "Ichnusa non filtrata 33cl", price: "€6,00" },
+          { name: "Birre 33cl", price: "€5,00" },
         ],
       },
       {
-        title: "Spillatore da Tavolo",
+        title: "Spillatore da tavolo",
         items: [
-          { name: "2 Litri", priceBionda: "€13,00", priceRossa: "€15,00" },
-          { name: "3 Litri", priceBionda: "€18,00", priceRossa: "€21,00" },
+          { name: "1 lt", priceBionda: "€14,00", priceRossa: "€17,00" },
+          { name: "1,5 lt", priceBionda: "€21,00", priceRossa: "€25,00" },
+          { name: "2 lt", priceBionda: "€27,00", priceRossa: "€32,00" },
+          { name: "2,5 lt", priceBionda: "€30,00", priceRossa: "€36,00" },
+          { name: "3 lt", priceBionda: "€34,00", priceRossa: "€41,00" },
         ],
       },
       {
         title: "Vino Rosso",
         items: [
-          {
-            name: "Barbera d'Asti DOC",
-            description: "bicchiere €3,50 — bottiglia €14,00",
-          },
-          {
-            name: "Dolcetto d'Alba DOC",
-            description: "bicchiere €4,00 — bottiglia €16,00",
-          },
+          { name: "Vino in bottiglia 0,75", price: "€15,00" },
+          { name: "Vino in bottiglia 0,75", price: "€20,00" },
+          { name: "sfuso 1/4 lt", price: "€5,00" },
+          { name: "sfuso 1/2 lt", price: "€7,00" },
+          { name: "Calice", price: "€5,00" },
         ],
       },
       {
         title: "Vino Bianco",
         items: [
-          {
-            name: "Roero Arneis DOCG",
-            description: "bicchiere €4,00 — bottiglia €16,00",
-          },
-          {
-            name: "Gavi DOCG",
-            description: "bicchiere €4,50 — bottiglia €18,00",
-          },
+          { name: "Vino in bottiglia 0,75", price: "€14,00" },
+          { name: "Vino in bottiglia 0,75", price: "€16,00" },
+          { name: "sfuso 1/4 lt", price: "€5,00" },
+          { name: "sfuso 1/2 lt", price: "€7,00" },
+          { name: "Calice", price: "€5,00" },
         ],
       },
     ],
@@ -97,8 +117,8 @@ export const menuSections: MenuSection[] = [
     description:
       "Farina di ceci, acqua, sale, olio di semi di arachide",
     items: [
-      { name: "Singola", price: "€5,00" },
-      { name: "Doppia", price: "€9,00" },
+      { name: "Singola porzione", price: "€5,00" },
+      { name: "Doppia porzione", price: "€9,00" },
       { name: "Teglia per 6 persone", price: "€25,00" },
     ],
   },
@@ -111,26 +131,40 @@ export const menuSections: MenuSection[] = [
       {
         title: "Fuori cottura",
         items: [
-          { name: "Gorgonzola", price: "€6,50" },
-          { name: "Stracchino", price: "€6,50" },
-          { name: "Prosciutto crudo", price: "€7,50" },
-          { name: "Lardo", price: "€7,50" },
+          { name: "Gorgonzola fuori cottura", price: "€6,50 a persona" },
+          { name: "Stracchino fuori cottura", price: "€6,50 a persona" },
+          {
+            name: "Prosciutto crudo fuori cottura",
+            price: "€7,50 a persona",
+          },
+          { name: "Lardo fuori cottura", price: "€7,50 a persona" },
         ],
       },
       {
         title: "MINIMO PER DUE PERSONE",
         items: [
-          { name: "Cipolla", price: "€6,50" },
-          { name: "Rosmarino", price: "€6,50" },
-          { name: "Peperoni", price: "€6,50" },
-          { name: "Salsiccia", price: "€6,50" },
-          { name: "Bianchetti", price: "€6,50" },
+          { name: "Fontina e gorgonzola", price: "€6,50 a persona" },
+          {
+            name: "Gorgonzola e salsiccia in cottura",
+            price: "€6,50 a persona",
+          },
+          { name: "Salamino in cottura", price: "€6,50 a persona" },
+          { name: "Rosmarino in cottura", price: "€6,50 a persona" },
+          { name: "Cipolla in cottura", price: "€6,50 a persona" },
+          { name: "Zucchine in cottura", price: "€6,50 a persona" },
+          {
+            name: "Grana e basilico in cottura",
+            price: "€6,50 a persona",
+          },
         ],
       },
       {
         title: "Teglia",
         items: [
-          { name: "Teglia per 6 persone", price: "€30,00" },
+          {
+            name: "Farinata Farcita teglia per 6 persone",
+            price: "€30",
+          },
         ],
       },
     ],
@@ -140,11 +174,18 @@ export const menuSections: MenuSection[] = [
     title: "Chiacchiere",
     description: "Piccoli bocconcini di pizza fritta con:",
     items: [
-      { name: "Nutella", price: "€5,00" },
-      { name: "Gorgonzola", price: "€5,50" },
-      { name: "Prosciutto cotto e mozzarella", price: "€6,00" },
-      { name: "Salame e stracchino", price: "€6,00" },
-      { name: "Pomodoro, mozzarella e basilico", price: "€5,50" },
+      {
+        name: "Bufala, crudo Parma, pomodorini, olive",
+        price: "€16,00",
+      },
+      {
+        name: "Burrata, crudo Parma, pomodorini, olive",
+        price: "€18,00",
+      },
+      {
+        name: "Tagliere salumi o formaggi o misto",
+        price: "€18,00",
+      },
     ],
   },
   {
@@ -155,82 +196,66 @@ export const menuSections: MenuSection[] = [
     dualPriceLabels: ["Tegamino", "Mattone"],
     items: [
       {
-        name: "Margherita",
-        description: "pomodoro, mozzarella",
+        name: "Margerita",
+        description: "Pomodoro, mozzarella",
         priceTegamino: "€6,00",
-        priceMattone: "€7,50",
+        priceMattone: "€6,50",
+      },
+      {
+        name: "Margherita di bufala",
+        description: "Pomodoro, mozzarella di bufala",
+        priceTegamino: "€7,50",
+        priceMattone: "€8,50",
       },
       {
         name: "Napoli",
-        description: "pomodoro, mozzarella, acciughe",
-        priceTegamino: "€7,00",
-        priceMattone: "€8,50",
-      },
-      {
-        name: "Romana",
-        description: "pomodoro, mozzarella, acciughe, capperi",
+        description: "Pomodoro, mozzarella, acciughe",
         priceTegamino: "€7,50",
-        priceMattone: "€9,00",
+        priceMattone: "€8,00",
       },
       {
         name: "Prosciutto",
-        description: "pomodoro, mozzarella, prosciutto cotto",
-        priceTegamino: "€7,00",
-        priceMattone: "€8,50",
-      },
-      {
-        name: "Funghi",
-        description: "pomodoro, mozzarella, funghi",
-        priceTegamino: "€7,00",
-        priceMattone: "€8,50",
-      },
-      {
-        name: "Prosciutto e funghi",
-        description: "pomodoro, mozzarella, prosciutto cotto, funghi",
+        description: "Pomodoro, mozzarella, prosciutto cotto",
         priceTegamino: "€7,50",
-        priceMattone: "€9,00",
+        priceMattone: "€8,00",
       },
       {
-        name: "Quattro stagioni",
-        description: "pomodoro, mozzarella, prosciutto, funghi, carciofi, olive",
-        priceTegamino: "€8,00",
-        priceMattone: "€9,50",
-      },
-      {
-        name: "Capricciosa",
-        description:
-          "pomodoro, mozzarella, prosciutto, funghi, carciofi, olive, uovo",
-        priceTegamino: "€8,50",
-        priceMattone: "€10,00",
+        name: "Würstel",
+        description: "Pomodoro, mozzarella, wurstel",
+        priceTegamino: "€7,50",
+        priceMattone: "€8,00",
       },
       {
         name: "Diavola",
-        description: "pomodoro, mozzarella, salame piccante",
-        priceTegamino: "€7,50",
+        description: "Pomodoro, mozzarella, salamino piccante",
+        priceTegamino: "€8,00",
         priceMattone: "€9,00",
       },
       {
-        name: "Tonno",
-        description: "pomodoro, mozzarella, tonno, cipolla",
-        priceTegamino: "€8,00",
+        name: "Quattro Stagioni",
+        description:
+          "Pomodoro, mozzarella, olive, prosciutto, carciofini, funghi",
+        priceTegamino: "€8,50",
         priceMattone: "€9,50",
       },
       {
-        name: "Salsiccia",
-        description: "pomodoro, mozzarella, salsiccia",
-        priceTegamino: "€7,50",
-        priceMattone: "€9,00",
-      },
-      {
-        name: "Quattro formaggi",
-        description: "mozzarella, gorgonzola, fontina, parmigiano",
+        name: "Formaggi",
+        description:
+          "Pomodoro, mozzarella, fontina, gorgonzola, emmentaler",
         priceTegamino: "€8,50",
-        priceMattone: "€10,00",
+        priceMattone: "€9,50",
       },
       {
-        name: "Bismarck",
-        description: "pomodoro, mozzarella, prosciutto, uovo",
-        priceTegamino: "€8,00",
+        name: "Greca",
+        description: "Pomodoro, mozzarella, olive",
+        priceTegamino: "€7,50",
+        priceMattone: "€8,00",
+      },
+      {
+        name: "Vegetariana",
+        description:
+          "Pomodoro, mozzarella, carciofi, melanzane e zucchine",
+        priceTegamino: "€8,50",
         priceMattone: "€9,50",
       },
     ],
@@ -243,39 +268,95 @@ export const menuSections: MenuSection[] = [
     dualPriceLabels: ["Tegamino", "Mattone"],
     items: [
       {
-        name: "Linea 18 — La Torinese",
-        description: "pomodoro, mozzarella, peperoni, salsiccia, cipolla",
-        priceTegamino: "€9,00",
-        priceMattone: "€10,50",
-      },
-      {
-        name: "Linea 21 — La Montanara",
-        description: "mozzarella, patate, salsiccia, rosmarino",
-        priceTegamino: "€9,00",
-        priceMattone: "€10,50",
-      },
-      {
-        name: "Linea 43 — La Fermata",
+        name: "Linea 43",
         description:
-          "pomodoro, mozzarella, crudo, rucola, parmigiano, pomodorini",
-        priceTegamino: "€9,50",
+          "Pomodoro, mozz., gorgonzola, speck, radicchio e salsiccia",
+        price: "€12,00",
+      },
+      {
+        name: "Linea 45",
+        description: "Pomodoro, mozzarella, speck, brie",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,00",
+      },
+      {
+        name: "Linea 46",
+        description:
+          "Mozzarella o stracchino, rucola, bresaola fuori cottura",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 53",
+        description:
+          "Mozzarella di bufala, tonno, pomodori secchi, olive taggiasche",
+        price: "€12,00",
+      },
+      {
+        name: "Linea 55",
+        description: "Pomodoro, mozzarella, prosciutto cotto, funghi",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 56 (Rossa o Bianca)",
+        description:
+          "Pomodoro, mozzarella, salsiccia, friarielli",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 57",
+        description:
+          "Pomodoro, mozzarella, prosciutto cotto, fontina",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 61",
+        description:
+          "Mozzarella, salsiccia, rucola, Parmigiano a scaglie",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 66",
+        description: "Pomodoro, mozzarella, tonno, cipolla",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 67",
+        description: "Pomodoro, mozzarella, tonno, carciofini",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 71",
+        description: "Mozzarella, gorgonzola, pere, noci",
+        priceTegamino: "€10,00",
         priceMattone: "€11,00",
       },
       {
-        name: "Linea 53 — La Golosa",
-        description: "mozzarella, gorgonzola, speck, noci",
-        priceTegamino: "€9,50",
+        name: "Linea 73",
+        description:
+          "Stracchino, pomodorini fuori cottura, olive",
+        priceTegamino: "€8,00",
+        priceMattone: "€9,00",
+      },
+      {
+        name: "Linea 77",
+        description:
+          "Mozzarella, prosciutto crudo, gorgonzola, noci",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 78",
+        description:
+          "Pomodoro, bufala, prosciutto crudo, grana, rucola",
+        priceTegamino: "€10,00",
         priceMattone: "€11,00",
-      },
-      {
-        name: "Linea Verde",
-        description: "mozzarella, zucchine, pomodorini, rucola",
-        price: "€9,00",
-      },
-      {
-        name: "Linea Mare",
-        description: "pomodoro, mozzarella, tonno, gamberetti, rucola",
-        price: "€10,00",
       },
     ],
   },
@@ -284,25 +365,31 @@ export const menuSections: MenuSection[] = [
     title: "Focaccia al Mattone",
     items: [
       {
-        name: "Focaccia classica",
-        description: "olio, sale, rosmarino",
-        price: "€5,00",
+        name: "Stracciatella e acciughe",
+        price: "€12,00",
       },
       {
-        name: "Focaccia pomodoro e origano",
-        price: "€5,50",
+        name: "Lardo, miele e noci",
+        price: "€12,00",
       },
       {
-        name: "Focaccia prosciutto crudo e stracchino",
-        price: "€8,00",
+        name: "Crudo di Parma e bufala",
+        price: "€14,00",
       },
       {
-        name: "Focaccia speck e brie",
-        price: "€8,50",
+        name: "Burrata e crudo di Parma",
+        price: "€14,00",
       },
       {
-        name: "Focaccia tonno, pomodorini e rucola",
-        price: "€8,00",
+        name: "Focaccia primavera",
+        description: "Fiordilatte, pomodorini, rucola",
+        price: "€12,00",
+      },
+      {
+        name: "Vegeteriana",
+        description:
+          "Pomodorini, fior di latte, zucchine, olio evo, origano, melanzane",
+        price: "€12,00",
       },
     ],
   },
@@ -311,19 +398,16 @@ export const menuSections: MenuSection[] = [
     title: "Calzoni",
     items: [
       {
-        name: "Calzone classico",
-        description: "prosciutto cotto, mozzarella",
-        price: "€8,00",
+        name: "Calzone Italo",
+        description:
+          "Pomodoro, mozzarella fiordilatte, prosciutto cotto e pomodoro in crosta",
+        price: "€11,00",
       },
       {
-        name: "Calzone farcito",
-        description: "prosciutto, funghi, mozzarella, ricotta",
-        price: "€9,00",
-      },
-      {
-        name: "Calzone speciale",
-        description: "salsiccia, friarielli, provola",
-        price: "€9,50",
+        name: "Calzone del Maestro",
+        description:
+          "Mozzarella fiordilatte, gorgonzola, fontina e parmigiano in crosta",
+        price: "€11,00",
       },
     ],
   },
@@ -331,42 +415,112 @@ export const menuSections: MenuSection[] = [
     id: "aggiunte",
     title: "Aggiunte",
     items: [
-      { name: "Mozzarella di bufala", price: "€2,50" },
-      { name: "Prosciutto crudo", price: "€2,00" },
-      { name: "Verdure grigliate", price: "€2,00" },
-      { name: "Uovo", price: "€1,00" },
-      { name: "Olive", price: "€1,00" },
-      { name: "Capperi", price: "€1,00" },
-      { name: "Acciughe", price: "€1,50" },
-      { name: "Gorgonzola", price: "€1,50" },
-      { name: "Patatine fritte", price: "€3,50" },
+      { name: "Rinforzo mozzarella", price: "€1,50" },
+      { name: "Crudo/speck/bresaola/bufala", price: "€2,50" },
+      { name: "Burrata", price: "€4,00" },
+      { name: "Altro ingrediente", price: "€2,00" },
     ],
   },
   {
     id: "cucina",
     title: "Cucina",
+    note: "* servito con insalata e pomodori",
     items: [
-      { name: "Patatine fritte", price: "€4,00" },
-      { name: "Tagliere salumi misti", price: "€10,00" },
-      { name: "Tagliere formaggi misti", price: "€10,00" },
-      { name: "Bruschette miste (4 pz)", price: "€6,00" },
-      { name: "Supplì (3 pz)", price: "€5,00" },
-      { name: "Crocchette di patate (4 pz)", price: "€5,00" },
+      {
+        name: "Antipasto misto",
+        description:
+          "Battuta di vitello, bufaline, vitello tonnato",
+        price: "€15,00",
+      },
+      {
+        name: "Tagliere formaggi o affettati o misto",
+        price: "€14,00",
+      },
+      {
+        name: "Battuta di vitello, burrata, scaglie di grana, granelle di nocciola, rucola",
+        price: "€16,00",
+      },
+      {
+        name: "Battuta di vitello con misticanza e pomodorini",
+        price: "€14,00",
+      },
+      {
+        name: "Roast beef, sedano, grana, noci",
+        price: "€13,00",
+      },
+      {
+        name: "Bresaola, rucola e scaglie di grana",
+        price: "€13,00",
+      },
+      {
+        name: "Vitello tonnato",
+        price: "€13,00",
+      },
+      {
+        name: "Bufala Crudo di Parma e pomodorini",
+        price: "€14,00",
+      },
+      {
+        name: "Burrata Crudo di Parma e pomodorini",
+        price: "€15,00",
+      },
+      {
+        name: "Milanese di tacchino",
+        price: "€12,00",
+      },
+      {
+        name: "Roastbeef con patate fritte*",
+        price: "€14,00",
+      },
+      {
+        name: "Patatine fritte*",
+        price: "€5,00",
+      },
     ],
   },
   {
     id: "insalate",
     title: "Insalate",
     items: [
-      { name: "Insalata verde", price: "€4,00" },
-      { name: "Insalata mista", price: "€5,00" },
       {
-        name: "Insalatona con tonno, mais, pomodorini",
-        price: "€7,50",
+        name: "Insalata Mazzini",
+        description:
+          "Misticanza, bocconcini di Bufala, tonno, pomodorini, scaglie di grana, mais",
+        price: "€12,00",
       },
       {
-        name: "Insalatona con pollo, pomodorini, parmigiano",
-        price: "€8,00",
+        name: "Insalata De Gasperi",
+        description:
+          "Bresaola, rucola, Bocconcini di bufala e gnocco fritto",
+        price: "€13,00",
+      },
+      {
+        name: "Insalata Milano",
+        description:
+          "Milanese di tacchino, pomodorini, scaglie di grana, misticanza",
+        price: "€13,00",
+      },
+      {
+        name: "Caprese con bufala",
+        price: "€13,00",
+      },
+      {
+        name: "Greca",
+        description:
+          "Feta, pomodori, cipolle, olive, peperoni, cetrioli",
+        price: "€11,00",
+      },
+      {
+        name: "Insalata Niçoise",
+        description:
+          "Insalata verde, pomodori, olive nere taggiasche, uova, patate, acciughe, tonno, cipolla, capperi.",
+        price: "€12,00",
+      },
+      {
+        name: "Proteica",
+        description:
+          "Fagioli, cipolle, uova sode, tonno, olive taggiasche",
+        price: "€11,00",
       },
     ],
   },
@@ -375,13 +529,15 @@ export const menuSections: MenuSection[] = [
     title: "Per i Bimbi",
     items: [
       {
-        name: "Menu Bimbo A",
-        description: "Pizza margherita tegamino + patatine + bibita",
+        name: "Menu Bimbo 1",
+        description:
+          "Milanese di tacchino, Patatine fritte, Bevanda, Gioco dolce",
         price: "€14,00",
       },
       {
-        name: "Menu Bimbo B",
-        description: "Cotoletta + patatine + bibita",
+        name: "Menu Bimbo 2",
+        description:
+          "Pizza baby (Margherita, cotto o wurstel), Bevanda, Gioco dolce",
         price: "€14,00",
       },
     ],
@@ -393,41 +549,43 @@ export const menuSections: MenuSection[] = [
       {
         title: "Dolci",
         items: [
-          { name: "Tiramisù", price: "€5,00" },
-          { name: "Panna cotta", price: "€4,50" },
-          { name: "Torta del giorno", price: "€5,00" },
+          { name: "Dolci alla carta", price: "€6,00" },
+          { name: "Affogato al caffè", price: "€6,00" },
           {
-            name: "Nutellone",
-            description: "pizza dolce con Nutella",
-            price: "€5,50",
+            name: "Focaccia o Gnocco fritto alla crema di nocciola",
+            description: "Consigliato per 2 persone",
+            price: "€10,00",
           },
         ],
       },
       {
         title: "Gelati",
         items: [
-          { name: "Coppa gelato (2 gusti)", price: "€4,00" },
-          { name: "Affogato al caffè", price: "€4,50" },
-          { name: "Tartufo", price: "€5,00" },
+          { name: "Gelati alla carta", price: "€5,00" },
+          { name: "Sorbetti alla carta", price: "€4,00" },
+          {
+            name: "Gioco dolce gelato per i bimbi",
+            description:
+              "Gelati di vari gusti all'interno di un pupazzetto",
+            price: "€6,00",
+          },
+          { name: "Frutta", price: "€6,00" },
+          { name: "Aggiunte di gelato", price: "€1,50" },
+          { name: "Digestivi alla carta", price: "€4,00" },
         ],
       },
       {
         title: "Caffetteria",
         items: [
-          { name: "Caffè", price: "€1,50" },
-          { name: "Caffè decaffeinato", price: "€1,50" },
+          {
+            name: "Caffè",
+            description: "espresso, dec, orzo",
+            price: "€2,00",
+          },
+          { name: "Caffè doppio", price: "€3,50" },
           { name: "Caffè corretto", price: "€2,50" },
-          { name: "Cappuccino", price: "€2,50" },
-          { name: "Marocchino", price: "€3,00" },
-        ],
-      },
-      {
-        title: "Digestivi",
-        items: [
-          { name: "Amaro del Capo", price: "€3,50" },
-          { name: "Limoncello", price: "€3,50" },
-          { name: "Grappa", price: "€3,50" },
-          { name: "Mirto", price: "€3,50" },
+          { name: "Cappuccino", price: "€3,00" },
+          { name: "The", price: "€3,00" },
         ],
       },
     ],
