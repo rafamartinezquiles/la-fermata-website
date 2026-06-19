@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -25,6 +26,8 @@ const slides = [
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showChevron, setShowChevron] = useState(false);
+  const pathname = usePathname();
+  const locale = pathname.startsWith("/en") ? "en" : "it";
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -87,7 +90,7 @@ export default function HeroCarousel() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          {restaurantInfo.tagline}
+          {locale === "en" ? "Authentic Torinese Pizzeria" : restaurantInfo.tagline}
         </motion.p>
 
         <motion.div
@@ -96,11 +99,11 @@ export default function HeroCarousel() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <CTAButton variant="primary" href="/menu">
-            Guarda il Menu
+          <CTAButton variant="primary" href={locale === "en" ? "/en/menu" : "/menu"}>
+            {locale === "en" ? "View the Menu" : "Guarda il Menu"}
           </CTAButton>
           <CTAButton variant="primary" href={restaurantInfo.phoneLink}>
-            Ordina Ora &mdash; {restaurantInfo.phone}
+            {locale === "en" ? "Order Now" : "Ordina Ora"} &mdash; {restaurantInfo.phone}
           </CTAButton>
         </motion.div>
       </div>
