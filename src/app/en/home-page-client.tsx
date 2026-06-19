@@ -36,12 +36,16 @@ const menuPreviewItems = [
 ];
 
 const galleryItems = [
-  { id: 0, src: "/images/pizza-margherita-bufala.jpg", alt: "Pizza Margherita con Bufala" },
-  { id: 1, src: "/images/farinata-classica.jpg", alt: "Farinata Classica" },
-  { id: 2, src: "/images/pizza-prosciutto-crudo.jpg", alt: "Pizza con Prosciutto Crudo" },
-  { id: 3, src: "/images/pizza-pesto-pomodorini.jpg", alt: "Pizza Pesto e Pomodorini" },
-  { id: 4, src: "/images/farinata-zucchini.jpg", alt: "Farinata con Zucchine" },
-  { id: 5, src: "/images/pizza-friarielli.jpg", alt: "Pizza Salsiccia e Friarielli" },
+  { id: 0, src: "/images/gallery-pomodorini-gialli.jpg", alt: "Pizza with yellow cherry tomatoes" },
+  { id: 1, src: "/images/gallery-pesto-olive.jpg", alt: "Pizza with pesto and olives" },
+  { id: 2, src: "/images/gallery-crudo-rucola.jpg", alt: "Pizza with prosciutto crudo and rocket" },
+  { id: 3, src: "/images/gallery-margherita-box.jpg", alt: "Margherita al mattone" },
+  { id: 4, src: "/images/gallery-bufala-crudo.jpg", alt: "Pizza with buffalo mozzarella and prosciutto" },
+  { id: 5, src: "/images/gallery-farinata-classica.jpg", alt: "Classic farinata" },
+  { id: 6, src: "/images/gallery-tegamino-pair.jpg", alt: "Pizzas al tegamino" },
+  { id: 7, src: "/images/gallery-salsiccia-gialli.jpg", alt: "Pizza with sausage and yellow tomatoes" },
+  { id: 8, src: "/images/gallery-margherita-tegamino.jpg", alt: "Margherita al tegamino" },
+  { id: 9, src: "/images/gallery-friarielli.jpg", alt: "Pizza with sausage and broccoli rabe" },
 ];
 
 export default function HomePageClientEN() {
@@ -166,7 +170,7 @@ export default function HomePageClientEN() {
           </motion.h3>
 
           {/* Desktop grid */}
-          <div className="hidden md:grid md:grid-cols-3 md:gap-4">
+          <div className="hidden md:grid md:grid-cols-5 md:gap-4">
             {galleryItems.map((item) => (
               <motion.div
                 key={item.id}
