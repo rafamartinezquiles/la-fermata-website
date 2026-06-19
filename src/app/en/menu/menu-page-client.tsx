@@ -144,9 +144,6 @@ export default function MenuPageClientEN() {
           <p className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#2C2420]">
             Cover charge: {copertoPriceEN}
           </p>
-          <p className="mt-1 font-[family-name:var(--font-dm-sans)] text-[13px] text-[#7A7068]">
-            Cover charge includes bread and grissini
-          </p>
         </div>
       </div>
     </div>

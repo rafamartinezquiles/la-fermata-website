@@ -144,9 +144,6 @@ export default function MenuPageClient() {
           <p className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#2C2420]">
             Coperto: {copertoPrice}
           </p>
-          <p className="mt-1 font-[family-name:var(--font-dm-sans)] text-[13px] text-[#7A7068]">
-            Il coperto include pane e grissini
-          </p>
         </div>
       </div>
     </div>

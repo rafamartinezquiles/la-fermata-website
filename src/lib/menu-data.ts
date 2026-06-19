@@ -477,7 +477,6 @@ export const menuSections: MenuSection[] = [
   {
     id: "cucina",
     title: "Cucina",
-    note: "* servito con insalata e pomodori",
     items: [
       {
         name: "Antipasto misto",
