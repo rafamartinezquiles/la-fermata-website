@@ -156,13 +156,11 @@ export const menuSections: MenuSection[] = [
             name: "Grana e basilico in cottura",
             price: "€6,50 a persona",
           },
+          {
+            name: "Farinata Farcita teglia per 6 persone",
+            price: "€30",
+          },
         ],
-      },
-    ],
-    items: [
-      {
-        name: "Farinata Farcita teglia per 6 persone",
-        price: "€30",
       },
     ],
   },
