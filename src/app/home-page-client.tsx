@@ -170,15 +170,15 @@ export default function HomePageClient() {
           </motion.h3>
 
           {/* Desktop grid */}
-          <div className="hidden md:grid md:grid-cols-5 md:gap-4">
+          <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-4">
             {galleryItems.map((item) => (
               <motion.div
                 key={item.id}
-                className="group relative aspect-square cursor-pointer overflow-hidden rounded-xl"
+                className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl bg-[#FAF0E4]"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5, delay: item.id * 0.08 }}
+                transition={{ duration: 0.5, delay: item.id * 0.06 }}
                 whileHover={{ scale: 1.03 }}
               >
                 <Image
@@ -186,7 +186,7 @@ export default function HomePageClient() {
                   alt={item.alt}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
-                  sizes="(min-width: 768px) 33vw, 100vw"
+                  sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 100vw"
                 />
               </motion.div>
             ))}
