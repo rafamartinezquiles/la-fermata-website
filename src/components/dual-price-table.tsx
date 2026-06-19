@@ -52,11 +52,10 @@ export default function DualPriceTable({
           const hasDualPrices = priceA || priceB;
 
           if (!hasDualPrices && item.price) {
-            // Single-price item within a dual-price section (e.g. Linea Verde)
             return (
               <div
                 key={index}
-                className="group grid grid-cols-[1fr_auto] items-baseline gap-2 rounded-md px-3 py-2.5 transition-colors duration-200 hover:bg-[#FAF0E4]"
+                className="group grid grid-cols-[1fr_80px_80px] items-baseline gap-2 rounded-md px-3 py-2.5 transition-colors duration-200 hover:bg-[#FAF0E4]"
               >
                 <div className="min-w-0">
                   <span className="font-[family-name:var(--font-playfair)] text-[15px] font-semibold text-[#2C2420]">
@@ -68,7 +67,10 @@ export default function DualPriceTable({
                     </p>
                   )}
                 </div>
-                <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium text-[#2C2420] whitespace-nowrap">
+                <span className="text-center font-[family-name:var(--font-dm-sans)] text-[14px] font-medium text-[#2C2420] whitespace-nowrap">
+                  —
+                </span>
+                <span className="text-center font-[family-name:var(--font-dm-sans)] text-[14px] font-medium text-[#2C2420] whitespace-nowrap">
                   {item.price}
                 </span>
               </div>
