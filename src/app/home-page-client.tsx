@@ -28,7 +28,7 @@ const staggerContainer = {
 const menuPreviewItems = [
   { name: "Margherita", desc: "Pomodoro, mozzarella", price: "6,00 / 6,50" },
   { name: "Antipasto misto", desc: "Battuta di vitello, bufaline, vitello tonnato", price: "15,00" },
-  { name: "Dolci alla carta", desc: "La nostra selezione di dolci", price: "6,00" },
+  { name: "Farinata Classica", desc: "Farina di ceci, tradizionale", price: "5,00" },
 ];
 
 const galleryItems = [

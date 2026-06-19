@@ -299,6 +299,12 @@ export const menuSections: MenuSection[] = [
         priceMattone: "€9,50",
       },
       {
+        name: "Linea 10",
+        description:
+          "Base rossa, pomodorini gialli e rossi, stracciatella e speck fuori cottura",
+        price: "€13,00",
+      },
+      {
         name: "Linea 15",
         description: "Pomodoro, mozzarella, gorgonzola, cipolle",
         priceTegamino: "€8,00",
@@ -338,6 +344,12 @@ export const menuSections: MenuSection[] = [
           "Mozzarella o stracchino, rucola, bresaola fuori cottura",
         priceTegamino: "€8,50",
         priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 52",
+        description:
+          "Base bianca, mozzarella fiordilatte, emulsione al basilico, olive taggiasche, patate lesse e pomodori secchi fuori cottura",
+        price: "€13,00",
       },
       {
         name: "Linea 53",
@@ -410,18 +422,6 @@ export const menuSections: MenuSection[] = [
           "Pomodoro, bufala, prosciutto crudo, grana, rucola",
         priceTegamino: "€10,00",
         priceMattone: "€11,00",
-      },
-      {
-        name: "Linea 10",
-        description:
-          "Base rossa, pomodorini gialli e rossi, stracciatella e speck fuori cottura",
-        price: "€13,00",
-      },
-      {
-        name: "Linea 52",
-        description:
-          "Base bianca, mozzarella fiordilatte, emulsione al basilico, olive taggiasche, patate lesse e pomodori secchi fuori cottura",
-        price: "€13,00",
       },
     ],
   },

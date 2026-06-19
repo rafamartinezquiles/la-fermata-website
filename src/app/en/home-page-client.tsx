@@ -28,7 +28,7 @@ const staggerContainer = {
 const menuPreviewItems = [
   { name: "Margherita", desc: "Tomato, mozzarella", price: "6,00 / 6,50" },
   { name: "Antipasto misto", desc: "Veal tartare, buffalo mozzarella bites, vitello tonnato", price: "15,00" },
-  { name: "Dolci alla carta", desc: "Our selection of desserts", price: "6,00" },
+  { name: "Farinata Classica", desc: "Chickpea flour, traditional", price: "5,00" },
 ];
 
 const galleryItems = [

@@ -281,6 +281,12 @@ export const menuSectionsEN: MenuSection[] = [
         priceMattone: "€9,50",
       },
       {
+        name: "Linea 10",
+        description:
+          "Red base, yellow and red cherry tomatoes, stracciatella and speck cold topping",
+        price: "€13,00",
+      },
+      {
         name: "Linea 15",
         description: "Tomato, mozzarella, gorgonzola, onions",
         priceTegamino: "€8,00",
@@ -320,6 +326,12 @@ export const menuSectionsEN: MenuSection[] = [
           "Mozzarella or stracchino, rocket, bresaola added after baking",
         priceTegamino: "€8,50",
         priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 52",
+        description:
+          "White base, fiordilatte mozzarella, basil emulsion, Taggiasca olives, boiled potatoes and sun-dried tomatoes cold topping",
+        price: "€13,00",
       },
       {
         name: "Linea 53",
@@ -392,18 +404,6 @@ export const menuSectionsEN: MenuSection[] = [
           "Tomato, buffalo mozzarella, prosciutto crudo, grana, rocket",
         priceTegamino: "€10,00",
         priceMattone: "€11,00",
-      },
-      {
-        name: "Linea 10",
-        description:
-          "Red base, yellow and red cherry tomatoes, stracciatella and speck cold topping",
-        price: "€13,00",
-      },
-      {
-        name: "Linea 52",
-        description:
-          "White base, fiordilatte mozzarella, basil emulsion, Taggiasca olives, boiled potatoes and sun-dried tomatoes cold topping",
-        price: "€13,00",
       },
     ],
   },
