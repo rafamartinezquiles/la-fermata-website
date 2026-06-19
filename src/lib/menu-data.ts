@@ -54,8 +54,8 @@ export const menuSections: MenuSection[] = [
           },
           {
             name: "Panaché bionda",
-            pricePiccola: "€5,50",
-            priceMedia: "€3,50",
+            pricePiccola: "€3,50",
+            priceMedia: "€5,50",
           },
           {
             name: "Panaché rossa",
