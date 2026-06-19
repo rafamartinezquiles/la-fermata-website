@@ -119,11 +119,11 @@ export default function MenuItemRow({
   return (
     <div className="group rounded-md px-3 py-2.5 transition-colors duration-200 hover:bg-[#FAF0E4]">
       <div className="flex items-baseline gap-2">
-        <span className="font-[family-name:var(--font-playfair)] text-[15px] font-semibold text-[#2C2420] shrink-0">
+        <span className="font-[family-name:var(--font-playfair)] text-[15px] font-semibold text-[#2C2420] min-w-0">
           {item.name}
         </span>
         {item.price && (
-          <span className="flex-1 min-w-[40px] border-b border-dotted border-[#C8A96E]/50 translate-y-[-3px]" />
+          <span className="flex-1 min-w-[20px] border-b border-dotted border-[#C8A96E]/50 translate-y-[-3px] shrink-0" />
         )}
         {item.price && (
           <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium text-[#2C2420] whitespace-nowrap shrink-0">
