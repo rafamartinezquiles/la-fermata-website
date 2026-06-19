@@ -141,7 +141,7 @@ export const menuSections: MenuSection[] = [
         ],
       },
       {
-        title: "MINIMO PER DUE PERSONE",
+        title: "In cottura (minimo per due persone)",
         items: [
           { name: "Fontina e gorgonzola", price: "€6,50 a persona" },
           {
@@ -158,14 +158,11 @@ export const menuSections: MenuSection[] = [
           },
         ],
       },
+    ],
+    items: [
       {
-        title: "Teglia",
-        items: [
-          {
-            name: "Farinata Farcita teglia per 6 persone",
-            price: "€30",
-          },
-        ],
+        name: "Farinata Farcita teglia per 6 persone",
+        price: "€30",
       },
     ],
   },
@@ -258,6 +255,24 @@ export const menuSections: MenuSection[] = [
         priceTegamino: "€8,50",
         priceMattone: "€9,50",
       },
+      {
+        name: "Biancaneve",
+        description: "Mozzarella",
+        priceTegamino: "€6,00",
+        priceMattone: "€6,00",
+      },
+      {
+        name: "Marinara",
+        description: "Pomodoro, acciughe, aglio",
+        priceTegamino: "€7,00",
+        priceMattone: "€7,50",
+      },
+      {
+        name: "Bismarck",
+        description: "Pomodoro, mozzarella, prosciutto, uovo",
+        priceTegamino: "€9,50",
+        priceMattone: "€9,50",
+      },
     ],
   },
   {
@@ -267,6 +282,46 @@ export const menuSections: MenuSection[] = [
     dualPrice: true,
     dualPriceLabels: ["Tegamino", "Mattone"],
     items: [
+      {
+        name: "Linea 1",
+        description: "Pomodoro, mozzarella, wurstel, patatine*",
+        priceTegamino: "€8,00",
+        priceMattone: "€9,00",
+      },
+      {
+        name: "Linea 4",
+        description: "Pomodoro, mozzarella, salsiccia, gorgonzola",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 6",
+        description: "Pomodoro, mozzarella, stracchino, rucola fuori cottura",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 15",
+        description: "Pomodoro, mozzarella, gorgonzola, cipolle",
+        priceTegamino: "€8,00",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 16",
+        description: "Mozzarella, cipolle, olive, acciughe",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 18",
+        description: "Mozzarella di bufala, mortadella (fuori cottura), pistacchi",
+        price: "€12,50",
+      },
+      {
+        name: "Linea 21",
+        description: "Mozzarella, Scamorza, pomodorini gialli, salsiccia",
+        price: "€12,00",
+      },
       {
         name: "Linea 43",
         description:
@@ -466,6 +521,7 @@ export const menuSections: MenuSection[] = [
       },
       {
         name: "Milanese di tacchino",
+        description: "Patatine fritte* Insalata e pomodori",
         price: "€12,00",
       },
       {

@@ -120,7 +120,7 @@ export const menuSectionsEN: MenuSection[] = [
         ],
       },
       {
-        title: "MINIMUM FOR TWO PEOPLE",
+        title: "Baked toppings (minimum for two people)",
         items: [
           { name: "Fontina e gorgonzola", price: "€6,50 a persona" },
           {
@@ -137,14 +137,11 @@ export const menuSectionsEN: MenuSection[] = [
           },
         ],
       },
+    ],
+    items: [
       {
-        title: "Tray",
-        items: [
-          {
-            name: "Farinata Farcita teglia per 6 persone",
-            price: "€30",
-          },
-        ],
+        name: "Farinata Farcita teglia per 6 persone",
+        price: "€30",
       },
     ],
   },
@@ -240,6 +237,24 @@ export const menuSectionsEN: MenuSection[] = [
         priceTegamino: "€8,50",
         priceMattone: "€9,50",
       },
+      {
+        name: "Biancaneve",
+        description: "Mozzarella",
+        priceTegamino: "€6,00",
+        priceMattone: "€6,00",
+      },
+      {
+        name: "Marinara",
+        description: "Tomato, anchovies, garlic",
+        priceTegamino: "€7,00",
+        priceMattone: "€7,50",
+      },
+      {
+        name: "Bismarck",
+        description: "Tomato, mozzarella, ham, egg",
+        priceTegamino: "€9,50",
+        priceMattone: "€9,50",
+      },
     ],
   },
   {
@@ -249,6 +264,46 @@ export const menuSectionsEN: MenuSection[] = [
     dualPrice: true,
     dualPriceLabels: ["Tegamino", "Mattone"],
     items: [
+      {
+        name: "Linea 1",
+        description: "Tomato, mozzarella, frankfurter, fries*",
+        priceTegamino: "€8,00",
+        priceMattone: "€9,00",
+      },
+      {
+        name: "Linea 4",
+        description: "Tomato, mozzarella, sausage, gorgonzola",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 6",
+        description: "Tomato, mozzarella, stracchino, rocket cold topping",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 15",
+        description: "Tomato, mozzarella, gorgonzola, onions",
+        priceTegamino: "€8,00",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 16",
+        description: "Mozzarella, onions, olives, anchovies",
+        priceTegamino: "€8,50",
+        priceMattone: "€9,50",
+      },
+      {
+        name: "Linea 18",
+        description: "Buffalo mozzarella, mortadella (cold topping), pistachios",
+        price: "€12,50",
+      },
+      {
+        name: "Linea 21",
+        description: "Mozzarella, Scamorza, yellow cherry tomatoes, sausage",
+        price: "€12,00",
+      },
       {
         name: "Linea 43",
         description:
@@ -460,7 +515,7 @@ export const menuSectionsEN: MenuSection[] = [
       },
       {
         name: "Milanese di tacchino",
-        description: "Turkey cutlet Milanese-style",
+        description: "Fries* Salad and tomatoes",
         price: "€12,00",
       },
       {
