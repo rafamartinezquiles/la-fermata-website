@@ -411,6 +411,18 @@ export const menuSections: MenuSection[] = [
         priceTegamino: "€10,00",
         priceMattone: "€11,00",
       },
+      {
+        name: "Linea 10",
+        description:
+          "Base rossa, pomodorini gialli e rossi, stracciatella e speck fuori cottura",
+        price: "€13,00",
+      },
+      {
+        name: "Linea 52",
+        description:
+          "Base bianca, mozzarella fiordilatte, emulsione al basilico, olive taggiasche, patate lesse e pomodori secchi fuori cottura",
+        price: "€13,00",
+      },
     ],
   },
   {

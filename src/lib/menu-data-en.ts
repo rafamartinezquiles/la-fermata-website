@@ -393,6 +393,18 @@ export const menuSectionsEN: MenuSection[] = [
         priceTegamino: "€10,00",
         priceMattone: "€11,00",
       },
+      {
+        name: "Linea 10",
+        description:
+          "Red base, yellow and red cherry tomatoes, stracciatella and speck cold topping",
+        price: "€13,00",
+      },
+      {
+        name: "Linea 52",
+        description:
+          "White base, fiordilatte mozzarella, basil emulsion, Taggiasca olives, boiled potatoes and sun-dried tomatoes cold topping",
+        price: "€13,00",
+      },
     ],
   },
   {
