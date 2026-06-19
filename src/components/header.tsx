@@ -6,20 +6,42 @@ import { usePathname } from "next/navigation";
 import { Phone, Menu } from "lucide-react";
 import { motion } from "framer-motion";
 import { restaurantInfo } from "@/lib/restaurant-info";
+import { getLocalePath } from "@/lib/translations";
 import MobileNav from "@/components/mobile-nav";
 
-const navLinks = [
-  { label: "Menu", href: "/menu" },
-  { label: "Chi Siamo", href: "/chi-siamo" },
-  { label: "Dove Siamo", href: "/dove-siamo" },
-];
+const pathMap: Record<string, string> = {
+  "/": "/en",
+  "/menu": "/en/menu",
+  "/chi-siamo": "/en/about",
+  "/dove-siamo": "/en/find-us",
+  "/en": "/",
+  "/en/menu": "/menu",
+  "/en/about": "/chi-siamo",
+  "/en/find-us": "/dove-siamo",
+};
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const locale = pathname.startsWith("/en") ? "en" : "it";
+  const isHome = pathname === "/" || pathname === "/en";
   const useDarkText = !isHome || scrolled;
+
+  const navLinks =
+    locale === "it"
+      ? [
+          { label: "Menu", href: "/menu" },
+          { label: "Chi Siamo", href: "/chi-siamo" },
+          { label: "Dove Siamo", href: "/dove-siamo" },
+        ]
+      : [
+          { label: "Menu", href: "/en/menu" },
+          { label: "About Us", href: "/en/about" },
+          { label: "Find Us", href: "/en/find-us" },
+        ];
+
+  const switchUrl = pathMap[pathname] ?? (locale === "it" ? "/en" : "/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +66,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
           <Link
-            href="/"
+            href={locale === "it" ? "/" : "/en"}
             className={`font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-[0.15em] transition-colors hover:text-[#B85C38] ${
               useDarkText ? "text-[#2C2420]" : "text-white drop-shadow-md"
             }`}
@@ -66,6 +88,29 @@ export default function Header() {
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-[#B85C38] transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
+
+            {/* Language switcher */}
+            <div
+              className={`flex items-center gap-1.5 font-[family-name:var(--font-dm-sans)] text-sm font-medium tracking-wide ${
+                useDarkText ? "text-[#2C2420]" : "text-white drop-shadow-sm"
+              }`}
+            >
+              {locale === "it" ? (
+                <span className="font-bold text-[#B85C38]">IT</span>
+              ) : (
+                <Link href={switchUrl} className="transition-colors hover:text-[#B85C38]">
+                  IT
+                </Link>
+              )}
+              <span>|</span>
+              {locale === "en" ? (
+                <span className="font-bold text-[#B85C38]">EN</span>
+              ) : (
+                <Link href={switchUrl} className="transition-colors hover:text-[#B85C38]">
+                  EN
+                </Link>
+              )}
+            </div>
 
             {/* Phone */}
             <a
@@ -96,6 +141,8 @@ export default function Header() {
       <MobileNav
         isOpen={mobileNavOpen}
         onClose={() => setMobileNavOpen(false)}
+        locale={locale}
+        switchUrl={switchUrl}
       />
     </>
   );
