@@ -2,11 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { menuSections, copertoPrice } from "@/lib/menu-data";
+import { menuSectionsEN, copertoPriceEN } from "@/lib/menu-data-en";
 import MenuSectionComponent from "@/components/menu-section";
 
 export default function MenuPageClientEN() {
-  const [activeSection, setActiveSection] = useState(menuSections[0].id);
+  const [activeSection, setActiveSection] = useState(menuSectionsEN[0].id);
   const navRef = useRef<HTMLDivElement>(null);
   const navItemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   const isScrollingRef = useRef(false);
@@ -46,7 +46,7 @@ export default function MenuPageClientEN() {
       }
     );
 
-    const sectionEls = menuSections
+    const sectionEls = menuSectionsEN
       .map((s) => document.getElementById(s.id))
       .filter(Boolean) as HTMLElement[];
 
@@ -109,7 +109,7 @@ export default function MenuPageClientEN() {
           ref={navRef}
           className="scrollbar-hide mx-auto flex max-w-4xl gap-1 overflow-x-auto px-4 py-2"
         >
-          {menuSections.map((section) => (
+          {menuSectionsEN.map((section) => (
             <button
               key={section.id}
               ref={(el) => {
@@ -130,7 +130,7 @@ export default function MenuPageClientEN() {
 
       {/* Menu sections */}
       <div className="mx-auto max-w-4xl space-y-16 px-4 py-12 md:space-y-20 md:px-6">
-        {menuSections.map((section) => (
+        {menuSectionsEN.map((section) => (
           <MenuSectionComponent key={section.id} section={section} />
         ))}
 
@@ -142,7 +142,7 @@ export default function MenuPageClientEN() {
             <div className="h-px w-12 bg-[#C8A96E]/40" />
           </div>
           <p className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#2C2420]">
-            Cover charge: {copertoPrice}
+            Cover charge: {copertoPriceEN}
           </p>
           <p className="mt-1 font-[family-name:var(--font-dm-sans)] text-[13px] text-[#7A7068]">
             Cover charge includes bread and grissini
