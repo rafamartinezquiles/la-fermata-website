@@ -610,11 +610,6 @@ export const menuSections: MenuSection[] = [
             description: "Consigliato per 2 persone",
             price: "€10,00",
           },
-        ],
-      },
-      {
-        title: "Gelati",
-        items: [
           { name: "Gelati alla carta", price: "€5,00" },
           { name: "Sorbetti alla carta", price: "€4,00" },
           {

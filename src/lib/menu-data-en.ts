@@ -607,11 +607,6 @@ export const menuSectionsEN: MenuSection[] = [
             description: "Focaccia or fried dough with hazelnut cream — recommended for 2 people",
             price: "€10,00",
           },
-        ],
-      },
-      {
-        title: "Ice Cream",
-        items: [
           { name: "Gelati alla carta", description: "Ice cream from the menu", price: "€5,00" },
           { name: "Sorbetti alla carta", description: "Sorbets from the menu", price: "€4,00" },
           {
