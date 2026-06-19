@@ -90,8 +90,8 @@ export default function MenuSectionComponent({ section }: MenuSectionProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const renderItems = () => {
-    // Dual price section — use DualPriceTable
-    if (section.dualPrice && section.dualPriceLabels && section.items) {
+    // Dual price section (no subsections) — use DualPriceTable
+    if (section.dualPrice && section.dualPriceLabels && section.items && !section.subsections) {
       return (
         <DualPriceTable
           items={section.items}
@@ -100,8 +100,8 @@ export default function MenuSectionComponent({ section }: MenuSectionProps) {
       );
     }
 
-    // Direct items (non-dual)
-    if (section.items) {
+    // Direct items only (no subsections)
+    if (section.items && !section.subsections) {
       return (
         <div className="space-y-0.5">
           {section.items.map((item, index) => (
@@ -113,12 +113,11 @@ export default function MenuSectionComponent({ section }: MenuSectionProps) {
       );
     }
 
-    // Subsections
+    // Subsections (optionally followed by standalone items)
     if (section.subsections) {
       return (
         <div className="space-y-8">
           {section.subsections.map((subsection, subIndex) => {
-            // Check if subsection items have dual prices
             const hasPiccolaMedia = subsection.items.some(
               (i) => i.pricePiccola || i.priceMedia
             );
@@ -153,6 +152,15 @@ export default function MenuSectionComponent({ section }: MenuSectionProps) {
               </div>
             );
           })}
+          {section.items && (
+            <div className="space-y-0.5">
+              {section.items.map((item, index) => (
+                <motion.div key={`standalone-${index}`} variants={itemVariants}>
+                  <MenuItemRow item={item} />
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
       );
     }
